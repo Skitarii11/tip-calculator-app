@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+body {
+    background-color: hsl(185, 41%, 84%);
+    color: hsl(183, 100%, 15%);
+    font-size: 24px;
+    font-family: 'Space Mono', monospace;
+}
+
+h3 {
+    margin-top: 7%;
+    margin-bottom: 3%;
+    text-align: center;
+    letter-spacing: 10px;
+}
+
+.container {
+    background-color: hsl(0, 0%, 100%);
+    margin: auto;
+    width: 50%;
+    height: 35%;
+    padding: 2%;
+    border-radius: 20px 20px 20px 20px;
+    display: flex;
+}
+
+label {
+    font-size: 70%;
+    font-weight: 550;
+}
+
+#custom-btn {
+    margin-bottom: 9%;
+    width: 28%;
+    height: 9%;
+    margin-top: 3%;
+    border-radius: 5px 5px 5px 5px;
+    text-align: center;
+    font-size: 80%;
+    font-weight: 600;
+    background-color: hsl(189, 41%, 97%);
+    border-style: none;
+    color: hsl(183, 100%, 15%);
+}
+
+#bill-input, #people-input {
+    width: 90%;
+    height: 9%;
+    margin-bottom: 9%;
+    border-style: none;
+    background-color: hsl(189, 41%, 97%);
+    background-image: url('../images/icon-dollar.svg');
+    background-repeat: no-repeat;
+    background-position: 3% 50%;
+    text-align: right;
+    color: hsl(183, 100%, 15%);
+}
+
+#bill-input:focus, #people-input:focus, #custom-btn:focus {
+    outline: none;
+    border: solid 2px hsl(172, 67%, 45%);
+}
+
+.bill-sec {
+    width: 50%;
+    white-space:nowrap;
+}
+
+.result-sec {
+    width: 50%;
+    padding: 3%;
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 10px 10px 10px 10px;
+    line-height: 0.8;
+    font-size: 70%;
+}
+
+.tip-amount {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 8%;
+    padding-bottom: 15%;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 26%;
+}
+
+.result-sec p {
+    color: hsl(189, 41%, 97%);
+}
+
+.result-sec sub {
+    color: hsl(185, 41%, 84%);
+}
+
+#tip-total {
+    color: hsl(172, 67%, 45%);
+    font-size: 270%;
+    font-weight: 700;
+    padding-left: 40px;
+    background-image: url("../images/icon-dollar.svg");
+    background-repeat: no-repeat;
+    background-position: 0% 50%;
+    background-size: 25px 40px;
+}
+
+#total-total {
+    color: hsl(172, 67%, 45%);
+    font-size: 270%;
+    font-weight: 700;
+    padding-left: 40px;
+    background-image: url("../images/icon-dollar.svg");
+    background-repeat: no-repeat;
+    background-position: 0% 50%;
+    background-size: 25px 40px;
+}
+
+.tip-perc-btn {
+    width: 28%;
+    height: 9%;
+    margin-top: 3%;
+    border-radius: 5px 5px 5px 5px;
+    text-align: center;
+    font-size: 80%;
+    font-weight: 600;
+    background-color: hsl(183, 100%, 15%);
+    color: hsl(189, 41%, 97%);
+    border-style: none;
+}
+
+.tip-perc-btn:hover {
+    background-color: hsl(185, 41%, 84%);
+    color: hsl(183, 100%, 15%);
+}
+
+.tip-perc-btn:active {
+    background-color: hsl(189, 41%, 97%);
+    color: hsl(183, 100%, 15%);
+    border:hsl(183, 100%, 15%) 2px solid;
+}
+
+#reset-btn {
+    width: 100%;
+    height: 12%;
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+    border-radius: 5px 5px 5px 5px;
+    border-style: none;
+    font-size: 110%;
+    font-weight: 700;
+    margin-bottom: 5%;
+}
+
+#reset-btn:hover {
+    background-color: hsl(185, 41%, 84%);
+}
+
+#reset-btn:active {
+    background-color: hsl(186, 14%, 43%);
+    color: hsl(172, 67%, 45%);
+}
+
+@media(max-width: 375px){
+    h3{
+        margin-bottom: 8%;
+    }
+    .container{
+        width: 84%;
+        height: 613px;
+        border-radius: 20px 20px 0px 0px;
+        padding: 8%;
+        flex-direction: column;
+    }
+
+    #bill-input {
+        width: 305px;
+        height: 40px;
+    }
+
+    #people-input {
+        width: 305px;
+        height: 40px;
+        margin-bottom: 30px;
+    }
+
+    .result-sec{
+        width: 94%;
+        font-size: 60%;
+    }
+    
+    #tip-total {
+        font-size: 220%;
+    }
+
+    #total-total {
+        font-size: 220%;
+    }
+
+    #reset-btn {
+        height: 45px;
+    }
+
+    .tip-perc-btn, #custom-btn {
+        width: 90px;
+        height: 40px;
+        margin-top: 9%;
+    }
+
+    .total {
+        padding-bottom: 15%;
+    }
+}
